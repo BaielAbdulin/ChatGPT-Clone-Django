@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} ChatGPT | Login {% endblock %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container form">
+    <br>
+    <form method="POST" autocomplete="off">
+        <h1>Login</h1>
+        {% csrf_token %}
+        {{loginform|crispy}}
+
+        <button type="submit" class="btn btn-primary">Login</button>
+
+        <p><br>Don't have an account? <a href="/signup">Sign Up!</a></p>
+    </form>
+</div>
+{% endblock %}

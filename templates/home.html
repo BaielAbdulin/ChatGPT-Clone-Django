@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} ChatGPT | Home {% endblock %}
+
+{% block content %}
+
+<div class = "home-container">
+    <h1 class="chatbot-title"> AI Chatbot with ChatGPT </h1>
+    <p> Welcome to my ChatGPT Clone Project! <br>
+        Here is a demo of what it looks like:
+    </p>
+
+    <div class="home-image">
+        <img src="{% static 'images/project-demo.png' %}" alt="Project Demo">
+    </div>
+
+    <p>
+        ChatGPT is a versatile conversational AI powered by OpenAI's cutting-edge technology.
+        With its advanced natural language processing capabilities, ChatGPT can provide
+        insightful responses and adapt to your conversational style seamlessly.
+    </p>
+    <p>
+        Whether you're looking for a virtual companion to chat with or need assistance with tasks,
+        ChatGPT is here to help. Engage in meaningful conversations, explore various topics,
+        or simply have fun interacting with the AI.
+    </p>
+
+    <button onclick="window.location.href='/login'" type="button" class="btn btn-primary btn-lg btn-block home-button">Try It Out!</button>
+    <br><br>
+
+    <p>
+        This project is powered by Django using the OpenAI API and a MySQL Database.<br>
+        It is deployed on <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere</a>. <br>
+        You can check out the source code on my <a href="https://github.com/ikalmikov16/ChatGPT-Clone-Django" target="_blank">Github</a>.
+    </p>
+    <p>
+        I hope you enjoy the project! <br>
+        Irakli Kalmikov <br>
+    </p>
+</div>
+
+{% endblock %}
