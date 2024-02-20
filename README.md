@@ -13,7 +13,9 @@ answer, time created, and foreign key relationship to its user.
 Upon each new message request, the program retrieves all previous messages from the database, sends them to the 
 OpenAI API for context, creates the newest message object, and returns all the messages for output.
 For the Message deletion function, it simply deletes the message object from the database and refreshes the page.
+
 I connected the backend to a MySQL database hosted on Clever Cloud.
+The project is deployed on PythonAnywhere.com
 
 ## Frontend
 For the frontend, I used Bootstrap for the navbar, text input, and buttons. 
